@@ -1,7 +1,7 @@
 const Work = () => (
   <section className="work" id="work">
     <div className="heading">
-      <h2>Our latest work</h2>
+      <h2>My latest Projects</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
     <div className="content">

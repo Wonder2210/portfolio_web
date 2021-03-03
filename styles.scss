@@ -23,7 +23,7 @@ img {
   background-position: left;
   display: flex;
   justify-content: space-between;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center;
   h2 {
     font-size: 3em;
@@ -145,23 +145,31 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     .servicesBx {
-      padding: 7em 1.25em;
-      background: #222;
-      color: white;
-      max-width: 21.25em;
+      padding: 1.25em 1.25em;
+      color: #222;
+      border-radius: 50%;
+      max-width: 10em;
+      max-height: 10em;
       margin: 1.25em;
       text-align: center;
       transition: 0.5s;
+      background: white;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
       &:hover {
-        background: #2196f3;
+        transform: scale(1.2);
+        .icon {
+          opacity: 1;
+        }
+        h3 {
+          color: black;
+        }
       }
-      img {
-        max-width: 5em;
-        filter: invert(1);
-      }
-      h2 {
-        font-size: 1.25em;
-        font-weight: 600;
+
+      h3 {
+        transition: 0.3s ease-in;
+        color: white;
       }
     }
   }
@@ -177,6 +185,68 @@ header {
       padding: 1.25em;
       img {
         max-width: 100%;
+      }
+    }
+  }
+}
+.posts {
+  .btn {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    min-height: 20em;
+
+    .post {
+      overflow-y: hidden;
+      position: relative;
+      max-height: 20em;
+      height: calc(100% * 2);
+      a {
+        text-decoration: none;
+        color: black;
+        &:hover {
+          color: #2196f3;
+        }
+      }
+      &__content {
+        position: absolute;
+        bottom: 0;
+        top: 50%;
+        display: block;
+        background: #fff;
+        transition: top 0.4s linear;
+      }
+      &__tags {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      &__tag {
+        color: #144a77;
+        background: #2196f3;
+        padding: 0.2em;
+        border-radius: 8px;
+      }
+      &__body,
+      &__footer {
+        visibility: hidden;
+      }
+
+      &:hover {
+        & > img {
+          filter: brightness(0.4);
+        }
+        .post__content {
+          top: 15%;
+          bottom: 0;
+        }
+        .post__body,
+        .post__footer {
+          visibility: visible;
+        }
       }
     }
   }

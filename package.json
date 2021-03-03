@@ -7,12 +7,15 @@
   },
   "dependencies": {
     "next": "latest",
+    "node-fetch": "^2.6.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "sass": "1.26.3"
   },
   "license": "MIT",
   "devDependencies": {
+    "@iconify/icons-logos": "^1.1.8",
+    "@iconify/react": "^1.1.4",
     "@types/node": "^14.14.31",
     "@types/react": "^17.0.2"
   }
