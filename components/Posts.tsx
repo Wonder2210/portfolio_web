@@ -1,4 +1,6 @@
 import Post, { props as PostType } from './Post'
+import { Icon } from '@iconify/react'
+import Dev from '@iconify/icons-logos/dev-icon'
 
 export type PostsArray = Array<PostType>
 
@@ -12,7 +14,7 @@ const Posts = ({ posts }: { posts: PostsArray }) => (
       {posts.map(
         ({
           cover_image,
-          date,
+          readable_publish_date,
           description,
           id,
           positive_reactions_count,
@@ -24,7 +26,7 @@ const Posts = ({ posts }: { posts: PostsArray }) => (
             <Post
               key={id}
               cover_image={cover_image}
-              date={date}
+              readable_publish_date={readable_publish_date}
               tag_list={tag_list}
               description={description}
               url={url}
@@ -36,8 +38,10 @@ const Posts = ({ posts }: { posts: PostsArray }) => (
       )}
     </div>
 
-    <a href="" className="btn">
-      View more
+    <a href="" className="icon-btn">
+      <div>
+        View more on <span></span>
+      </div>
     </a>
   </section>
 )

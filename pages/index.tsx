@@ -28,7 +28,7 @@ export default function Home({ posts }: { posts: PostsArray }) {
 
 export async function getStaticProps(context) {
   const data = await fetch(
-    'https://dev.to/api/articles?username=wonder2210&page=1&per_page=3'
+    'https://dev.to/api/articles?username=wonder2210&page=1&per_page=6'
   )
   const posts = await data.json()
 

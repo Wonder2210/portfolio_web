@@ -1,7 +1,7 @@
 const Contact = () => (
   <section className="contact" id="contact">
     <div className="heading white">
-      <h2>Contact Us</h2>
+      <h2>Contact Me</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
     <div className="content">
