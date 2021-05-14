@@ -28,8 +28,8 @@ const Post: React.FC<props> = ({
           <h2>{title}</h2>
         </a>
         <div className="post__tags">
-          {tag_list.map((i) => (
-            <span className="post__tag">{i}</span>
+          {tag_list.map((i,indx) => (
+            <span key={indx} className="post__tag">{i}</span>
           ))}
         </div>
       </div>

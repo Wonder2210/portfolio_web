@@ -8,7 +8,6 @@ import Works from '../components/Works'
 import fetch from 'node-fetch'
 
 export default function Home({ posts }: { posts: PostsArray }) {
-  console.log(posts)
   return (
     <>
       <Header />
