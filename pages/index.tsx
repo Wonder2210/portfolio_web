@@ -6,10 +6,14 @@ import Contact from '../components/Contact'
 import Posts, { PostsArray } from '../components/Posts'
 import Works from '../components/Works'
 import fetch from 'node-fetch'
+import Head from "next/head";
 
 export default function Home({ posts }: { posts: PostsArray }) {
   return (
     <>
+    <Head>
+      Wonder Gonzalez - Web developer
+    </Head>
       <Header />
       <Banner />
       <AboutMe />
