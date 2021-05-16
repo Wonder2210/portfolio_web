@@ -17,7 +17,7 @@ class MyDocument extends Document {
         <meta property="og:title" content="Web developer" />
         <meta property="og:type" content="website" />
         <meta property="og:description" content="i'm a web developer , focused on build beautiful web experiences " />
-        <meta property="og:image" content="https://wondervg.com/icon/icon/favicon-96x96.png" />
+        <meta property="og:image" content="https://wondervg.com/icon/favicon-96x96.png" />
         <meta property="og:url" content="https://wondervg.com" />
     <meta name="twitter:creator" content="@WonDErV14" />
     <meta name="twitter:site" content="@WonDErV14" />
