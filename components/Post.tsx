@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import TruncateText from "react-truncate";
 
 export type props = {
   id?: number
@@ -25,7 +26,11 @@ const Post: React.FC<props> = ({
     <div className="post__content">
       <div className="post__header">
         <a href={url}>
-          <h2>{title}</h2>
+        <h2>
+          <TruncateText lines={2}>
+          {title}
+          </TruncateText>
+          </h2>
         </a>
         <div className="post__tags">
           {tag_list.map((i,indx) => (

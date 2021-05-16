@@ -20,9 +20,10 @@ const Banner = () => {
           Hello my name is <span>wonder</span>
         </h2>
         <h3>i'm a Web developer</h3>
-        <a href="#about" className="btn">
-          About me
-        </a>
+        <svg className="scroll" width="66" height="133" viewBox="0 0 66 133" fill="none" >
+                <rect x="3" y="3" width="60" height="127" rx="30" stroke="white" stroke-width="6"/>
+                <ellipse className="circle" cx="32.5" cy="29.5" rx="21.5" ry="19.5" fill="white"/>
+                </svg>
       </div>
       <div className="pattern"></div>
     </section>

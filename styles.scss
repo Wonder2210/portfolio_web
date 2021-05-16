@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;800&display=swap');
 
 * {
   margin: 0;
@@ -32,6 +33,7 @@ img {
     color: white;
     font-weight: 500;
     line-height: 1.5em;
+    text-align: center;
     span {
       display: block;
       font-weight: 700;
@@ -42,6 +44,7 @@ img {
     font-size: 3em;
     color: white;
     font-weight: 500;
+    text-align: center;
   }
   .pattern {
     background-size: cover;
@@ -120,9 +123,7 @@ header {
     background: white;
     padding: 1.25em 7em;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    .logo {
-      color: #111;
-    }
+    
     ul {
       li {
         a {
@@ -133,12 +134,36 @@ header {
   }
 
   .logo {
-    color: white;
-    font-size: 1.5em;
-    text-transform: uppercase;
     text-decoration: none;
-    font-weight: 700;
-    letter-spacing: 2px;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: large;
+    color:white;
+    letter-spacing: normal;
+    display: inline;
+    text-transform: none;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.5s;
+  
+    p{
+      display: inline;
+    }
+    span{
+      background: linear-gradient(45deg, rgba(255,0,0,1) 35%, rgba(255,204,0,1) 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 2.5em;
+      
+      font-weight: 800;
+
+    }
+    // background: linear-gradient(45deg, rgba(0,255,255,1) 35%, rgba(204,255,102,1) 100%);
+  
+ 
+    
+
   }
   ul {
     display: flex;
@@ -360,6 +385,24 @@ header {
     }
   }
 }
+.scroll {
+  display: block;
+  width: 30px;
+  margin: 2em auto 0 auto;
+  .circle {
+    animation: circleAnim 1s infinite alternate-reverse;
+  }
+}
+
+@keyframes circleAnim {
+  from {
+            transform: translate(0px, 0px);
+    z-index: 5;
+  }
+  to {
+            transform: translate(0, 67px);
+  }
+}
 
 .contact {
   background: #111;
@@ -482,18 +525,23 @@ header {
   .toggle {
     width: 2.5em;
     height: 2.5em;
-    background: url(/images/menu.png);
+    border:none;
+    background: url('https://api.iconify.design/cil:hamburger-menu.svg?color=%23fff') no-repeat center center / contain;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 30px;
     cursor: pointer;
+    svg{
+      -ms-transform: rotate(360deg); 
+      -webkit-transform: rotate(360deg); 
+      transform: rotate(360deg);
+    }
   }
   .toggle.active {
     width: 2.5em;
     height: 2.5em;
-    background: url(/images/close.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url('https://api.iconify.design/bi:x.svg?color=%23fff') no-repeat center center / contain;
+
     background-size: 25px;
     cursor: pointer;
   }
@@ -503,8 +551,10 @@ header {
   section {
     padding: 6.25em 3.125em;
   }
+ 
   .banner {
     padding: 9.375em 3.125em 6.25em;
+ 
     h2 {
       font-size: 2.5em;
     }
@@ -512,6 +562,8 @@ header {
       font-size: 1.5em;
     }
   }
+
+  
   .btn {
     margin-top: 0.6em;
     padding: 0.5em 1.25em;

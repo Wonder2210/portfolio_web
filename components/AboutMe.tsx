@@ -7,16 +7,14 @@ const AboutMe = () => (
       <div className="contentBx w50">
         <h3>i'm a Web developer</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-          minima repellat aut ducimus molestiae. Facilis maiores impedit, nulla
-          fuga repudiandae corporis dolore earum minima perferendis alias,
-          optio, architecto ad sed?
+          Hi There, My name is Wonderly , but you can tell me just Wonder  i am
+          a Web developer with 4 years of experience developing beautiful web experiences,
+           i am constantly seeking for more knowledge,
+          Programming is not just a job to me. It is my hobby and something I am passionate about
           <br />
           <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad culpa
-          earum reiciendis expedita blanditiis sapiente deleniti recusandae ipsa
-          accusantium quam architecto, tempora qui iure dignissimos voluptates.
-          Libero distinctio enim minima.
+          Nowadays I mostly work with TypeScript, Next.js and GraphQL.
+          I enjoy working full stack but what I am the most interested in is frontend development.
         </p>
       </div>
       <div className="w50">
