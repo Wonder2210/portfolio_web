@@ -12,9 +12,19 @@ class MyDocument extends Document {
       <Html>
         <Head>
         <title>Wonder - Web Developer</title>
+ 
+  
         <meta property="og:title" content="Web developer" />
+        <meta property="og:type" content="website" />
         <meta property="og:description" content="i'm a web developer , focused on build beautiful web experiences " />
-        <meta property="og:image" content="https://wondervg.com/icon//icon/favicon-96x96.png" />
+        <meta property="og:image" content="https://wondervg.com/icon/icon/favicon-96x96.png" />
+        <meta property="og:url" content="https://wondervg.com" />
+    <meta name="twitter:creator" content="@WonDErV14" />
+    <meta name="twitter:site" content="@WonDErV14" />
+    <meta
+      name="twitter:card"
+      content="summary || summary_large_image || player || app"
+    />
         <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png"/>
         <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png"/>
         <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-icon-72x72.png"/>
