@@ -19,8 +19,13 @@ const AboutMe = () => (
       </div>
       <div className="w50">
         <img
-          src="https://via.placeholder.com/400/0000FF"
+          src="/profile.jpeg"
           alt=""
+          width="300"
+          style={{
+            display:"block",
+            margin:"0 auto"
+          }}
           className="img"
         />
       </div>

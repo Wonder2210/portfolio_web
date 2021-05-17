@@ -6,11 +6,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "emailjs-com": "^2.6.4",
     "gsap": "^3.6.0",
     "next": "latest",
     "node-fetch": "^2.6.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-hot-toast": "^1.0.2",
     "react-truncate": "^2.4.0",
     "sass": "1.26.3"
   },
