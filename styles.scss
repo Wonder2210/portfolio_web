@@ -119,6 +119,9 @@ header {
       }
     }
   }
+  .toggle, .close{
+    display: none;
+  }
   &.sticky {
     background: white;
     padding: 1.25em 7em;
@@ -133,38 +136,7 @@ header {
     }
   }
 
-  .logo {
-    text-decoration: none;
-    font-family: 'Fira Sans', sans-serif;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: large;
-    color:white;
-    letter-spacing: normal;
-    display: inline;
-    text-transform: none;
-    transition: all 0.5s ease-in-out;
-    transition-delay: 0.5s;
   
-    p{
-      display: inline;
-    }
-    span{
-      background: linear-gradient(45deg, rgba(255,0,0,1) 35%, rgba(255,204,0,1) 100%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-size: 2.5em;
-      
-      font-weight: 800;
-
-    }
-    // background: linear-gradient(45deg, rgba(0,255,255,1) 35%, rgba(204,255,102,1) 100%);
-  
- 
-    
-
-  }
   ul {
     display: flex;
     justify-content: space-between;
@@ -248,7 +220,7 @@ header {
       margin: 1.25em;
       text-align: center;
       transition: 0.5s;
-      background: white;
+      background: rgba(white,0.85);
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -273,16 +245,39 @@ header {
 
 .work {
   .content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-auto-rows: minmax(330px, 1fr);
+    
+    gap: 2.5em;
     .workBx {
-      width: 50%;
-      padding: 1.25em;
-      img {
-        max-width: 100%;
+      padding: 2em;
+      box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+      &__header{
+        margin:0 auto 2em auto;
+        display: block;
+        width:100%;
+        height: auto;
+
+  
+      }
+      &__title{
+       
+          text-decoration: none;
+          color: black;
+          transition: color 0.15s ease-in;
+          &:hover {
+            color: #2196f3;
+          }
+        
+      }
+      &__description{
+        
       }
     }
+  }
+  .heading{
+    margin-top: 3em;
   }
 }
 .posts {
@@ -420,7 +415,7 @@ header {
         margin-bottom: 0.8em;
       }
       input,
-      & textarea {
+      & textarea,button {
         margin-bottom: 1.25em;
         padding: 1em;
         font-size: 1em;
@@ -437,9 +432,10 @@ header {
       textarea {
         min-height: 12.5em;
       }
-      input[type='submit'] {
+      button[type='submit'] {
         background: #2196f3;
         cursor: pointer;
+        border: none;
         max-width: 6.25em;
         letter-spacing: 2px;
         text-transform: uppercase;
@@ -502,7 +498,7 @@ header {
   }
   .menu {
     position: fixed;
-    top: 4.6em;
+    top: 0;
     left: -100%;
     display: block;
     padding: 6.25em 3.125em;
@@ -513,8 +509,23 @@ header {
     transition: 0.5s;
     z-index: 999;
     border-top: 1px solid rgba(black, 0.2);
+    .close{
+      display: block;
+      position: absolute;
+      top:1em;
+      right:1em;
+      background: url('https://api.iconify.design/bi:x.svg') no-repeat center center / contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 45px;
+      width: 3em;
+      height:3em;
+      border:none;
+    }
   }
   .menu.active {
+    background: #fff;
+
     left: 0;
   }
   header ul li a {
@@ -523,6 +534,7 @@ header {
     font-size: 1.5em;
   }
   .toggle {
+    display: block !important;
     width: 2.5em;
     height: 2.5em;
     border:none;
@@ -537,14 +549,7 @@ header {
       transform: rotate(360deg);
     }
   }
-  .toggle.active {
-    width: 2.5em;
-    height: 2.5em;
-    background: url('https://api.iconify.design/bi:x.svg?color=%23fff') no-repeat center center / contain;
-
-    background-size: 25px;
-    cursor: pointer;
-  }
+ 
   header.sticky .toggle {
     filter: invert(1);
   }
@@ -595,6 +600,17 @@ header {
   .work .content .workBx {
     width: 100%;
     padding: 0.6em;
+    &__header{
+      margin:0 auto;
+
+    }
+    &__title{
+
+    }
+    &__description{
+
+    }
+
   }
 
   .testimonial .content .testimonialBx {

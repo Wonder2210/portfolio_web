@@ -12,6 +12,8 @@ import Js from '@iconify/icons-logos/javascript'
 import postgres from '@iconify/icons-logos/postgresql'
 import Mongo from '@iconify/icons-logos/mongodb'
 import Css from '@iconify/icons-logos/css-3'
+import Git from "@iconify/icons-logos/git";
+import Laravel from "@iconify/icons-logos/laravel"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -82,6 +84,14 @@ const skills = () => {
         <div className="servicesBx" ref={(el) => (elms.current[9] = el)}>
           <Icon className="icon" icon={Js} width="100%" height="90%" />
           <h3>Javascript</h3>
+        </div>
+        <div className="servicesBx" ref={(el) => (elms.current[10] = el)}>
+          <Icon className="icon" icon={Git} width="100%" height="90%" />
+          <h3>Git</h3>
+        </div>
+        <div className="servicesBx" ref={(el) => (elms.current[11] = el)}>
+          <Icon className="icon" icon={Laravel} width="100%" height="90%" />
+          <h3>Git</h3>
         </div>
       </div>
     </section>

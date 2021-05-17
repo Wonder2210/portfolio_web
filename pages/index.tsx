@@ -23,7 +23,7 @@ export default function Home({ posts }: { posts: PostsArray }) {
       <Contact />
 
       <div className="copyright">
-        <p>Copyright wonder 2021 all rights reserved</p>
+        <p>Copyright&copy; Wonderly 2021 all rights reserved</p>
       </div>
     </>
   )

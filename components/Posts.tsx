@@ -8,7 +8,7 @@ const Posts = ({ posts }: { posts: PostsArray }) => (
   <section className="posts" id="posts">
     <div className="heading">
       <h2>My Latest Post</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p>I like to write articles in my free time to get a greater understanding of my own knowledge</p>
     </div>
     <div className="content">
       {posts.map(

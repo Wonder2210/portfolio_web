@@ -17,9 +17,9 @@ const Banner = () => {
     <section className="banner" id="home">
       <div className="textBx" ref={section}>
         <h2>
-          Hello my name is <span>wonder</span>
+          Hello my name is <span>Wonder</span>
         </h2>
-        <h3>i'm a Web developer</h3>
+        <h3>I am Web developer and All time learner</h3>
         <svg className="scroll" width="66" height="133" viewBox="0 0 66 133" fill="none" >
                 <rect x="3" y="3" width="60" height="127" rx="30" stroke="white" stroke-width="6"/>
                 <ellipse className="circle" cx="32.5" cy="29.5" rx="21.5" ry="19.5" fill="white"/>

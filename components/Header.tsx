@@ -10,6 +10,9 @@ const Header = () => {
   const toggleMenu = ()=>{
     setMenu(!menu);
   }
+  const closeMenu = ()=>{
+    setMenu(false);
+  }
 
   React.useEffect(() => {
     window.addEventListener('scroll', onScroll)
@@ -29,24 +32,27 @@ const Header = () => {
       </a>
       <button className={`toggle ${menu ? 'active':''}`} onClick={toggleMenu}>
     </button>
+      
       <ul className={`menu ${menu ? 'active':''}`}>
+      <button className={`close`} onClick={closeMenu}>
+    </button>
         <li>
-          <a href="#home">Home</a>
+          <a href="#home" onClick={closeMenu}>Home</a>
         </li>
         <li>
-          <a href="#about">About</a>
+          <a href="#about" onClick={closeMenu}>About</a>
         </li>
         <li>
-          <a href="#skills">Skills</a>
+          <a href="#skills" onClick={closeMenu}>Skills</a>
         </li>
         <li>
-          <a href="#work">Work</a>
+          <a href="#work" onClick={closeMenu}>Work</a>
         </li>
         <li>
-          <a href="#posts">Posts</a>
+          <a href="#posts" onClick={closeMenu}>Writing</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#contact" onClick={closeMenu}>Contact</a>
         </li>
       </ul>
     </header>
