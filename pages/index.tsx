@@ -12,7 +12,7 @@ export default function Home({ posts }: { posts: PostsArray }) {
   return (
     <>
     <Head>
-      Wonder Gonzalez - Web developer
+      <title> Wonder Gonzalez - Web developer </title>
     </Head>
       <Header />
       <Banner />
