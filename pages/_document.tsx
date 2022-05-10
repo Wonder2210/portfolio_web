@@ -1,6 +1,5 @@
 import * as React from 'react'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import Script from 'next/script'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -40,7 +39,6 @@ class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
           <meta name="theme-color" content="#ffffff"></meta>
-          <Script src="/hotjar.js" />
         </Head>
         <body>
           <Main />

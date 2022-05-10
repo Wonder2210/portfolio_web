@@ -1,12 +1,13 @@
 import { DefaultSeo } from 'next-seo'
+import Script from 'next/script'
 import '../styles.scss'
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <DefaultSeo
-      title='Wonder Gonzalez - Frontend Engineer'
-      description="I'm a FrontEnd enginer, focused on build beautiful web experiences"
+        title="Wonder Gonzalez - Frontend Engineer"
+        description="I'm a FrontEnd enginer, focused on build beautiful web experiences"
         openGraph={{
           type: 'website',
           locale: 'en_IE',
@@ -25,6 +26,7 @@ function MyApp({ Component, pageProps }) {
           ],
         }}
       />
+      <Script src="/hotjar.js" />
       <Component {...pageProps} />
     </>
   )
