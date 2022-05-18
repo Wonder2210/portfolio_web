@@ -258,6 +258,9 @@ header {
         display: block;
         width:100%;
         height: auto;
+        &--black{
+          background-color: #000;
+        }
 
   
       }
