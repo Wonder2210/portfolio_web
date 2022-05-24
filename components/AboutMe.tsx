@@ -13,7 +13,7 @@ const AboutMe = () => (
           Programming is not just a job to me. It is my hobby and something I am passionate about
           <br />
           <br />
-          Nowadays I mostly work with TypeScript, Next.js and GraphQL.
+          Nowadays I mostly work with TypeScript, Next.js and GraphQL, And also Ruby on Rails.
           I enjoy working full stack but what I am the most interested in is frontend development.
         </p>
       </div>
