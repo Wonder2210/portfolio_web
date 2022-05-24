@@ -29,7 +29,7 @@ const skills = () => {
       stagger: 0.2,
       scale: 0.1,
       duration: 0.6,
-      ease: Back.easeOut.config(1),
+      ease: Back.easeOut.config(0),
     })
 
     ScrollTrigger.create({

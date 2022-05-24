@@ -9,6 +9,7 @@ function MyApp({ Component, pageProps }) {
         title="Wonder Gonzalez - Frontend Engineer"
         description="I'm a FrontEnd enginer, focused on build beautiful web experiences"
         openGraph={{
+          title: 'Wonder gonzalez - Frontend Engineer',
           type: 'website',
           locale: 'en_IE',
           url: 'https://wondervg.com',
