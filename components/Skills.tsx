@@ -13,7 +13,7 @@ import postgres from '@iconify/icons-logos/postgresql'
 import Mongo from '@iconify/icons-logos/mongodb'
 import Css from '@iconify/icons-logos/css-3'
 import Git from '@iconify/icons-logos/git'
-import Laravel from '@iconify/icons-logos/laravel'
+import RoR from '@iconify/icons-logos/rails'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -49,10 +49,7 @@ const skills = () => {
           className="servicesBx"
           style={{ display: 'none' }}
           ref={(el) => (elms.current[0] = el)}
-        >
-          <Icon className="icon" icon={react} width="100%" height="90%" />
-          <h3>React</h3>
-        </div>
+        ></div>
         <div className="servicesBx" ref={(el) => (elms.current[1] = el)}>
           <Icon className="icon" icon={react} width="100%" height="90%" />
           <h3>React</h3>
@@ -98,7 +95,7 @@ const skills = () => {
           <h3>Git</h3>
         </div>
         <div className="servicesBx" ref={(el) => (elms.current[12] = el)}>
-          <Icon className="icon" icon={Laravel} width="100%" height="90%" />
+          <Icon className="icon" icon={RoR} width="100%" height="90%" />
           <h3>Git</h3>
         </div>
       </div>
