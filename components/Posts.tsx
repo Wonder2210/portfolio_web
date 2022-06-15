@@ -38,7 +38,7 @@ const Posts = ({ posts }: { posts: PostsArray }) => (
       )}
     </div>
 
-    <a href="" className="icon-btn">
+    <a href="https://dev.to/wonder2210" className="icon-btn">
       <div>
         View more on <span></span>
       </div>

@@ -13,7 +13,7 @@ const Work = () => (
           height="50%"
           style={{ padding: '1em', margin: '4em 0em' }}
         />
-        <a href="" className="workBx__title">
+        <a href="https://getlighthouse.com" className="workBx__title">
           <h2>Get lighthouse</h2>
         </a>
         <p className="workBx__body">
